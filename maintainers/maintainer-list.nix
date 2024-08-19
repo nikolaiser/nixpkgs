@@ -14382,6 +14382,13 @@
     githubId = 818502;
     name = "Nathan Yong";
   };
+  natsukagami = {
+    email = "natsukagami@gmail.com";
+    github = "natsukagami";
+    githubId = 9061737;
+    name = "Natsu Kagami";
+    keys = [ { fingerprint = "5581 26DC 886F E14D 501D  B0F2 D6AD 7B57 A992 460C"; } ];
+  };
   natsukium = {
     email = "nixpkgs@natsukium.com";
     github = "natsukium";
