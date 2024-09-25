@@ -37,13 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   meta = with lib; {
-    description = "Research platform for new language concepts and compiler technologies for Scala";
-    longDescription = ''
-      Dotty is a platform to try out new language concepts and compiler technologies for Scala.
-      The focus is mainly on simplification. We remove extraneous syntax (e.g. no XML literals),
-      and try to boil down Scala’s types into a smaller set of more fundamental constructs.
-      The theory behind these constructs is researched in DOT, a calculus for dependent object types.
-    '';
+    description = "The Scala 3 compiler, also known as Dotty";
     homepage = "http://dotty.epfl.ch/";
     license = licenses.bsd3;
     platforms = platforms.all;
