@@ -7988,6 +7988,12 @@
     githubId = 1742172;
     name = "Hamish Hutchings";
   };
+  hamzaremmal = {
+    email = "hamza.remmal@epfl.ch";
+    github = "hamzaremmal";
+    githubId = 56235032;
+    name = "Hamza Remmal";
+  };
   hanemile = {
     email = "mail@emile.space";
     github = "HanEmile";
