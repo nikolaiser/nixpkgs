@@ -12,7 +12,7 @@ stdenv.mkDerivation (finalAttrs: {
   pname = "scala-bare";
 
   src = fetchurl {
-    url = "https://github.com/lampepfl/dotty/releases/download/${finalAttrs.version}/scala3-${finalAttrs.version}.tar.gz";
+    url = "https://github.com/scala/scala3/releases/download/${finalAttrs.version}/scala3-${finalAttrs.version}.tar.gz";
     hash = "sha256-61lAETEvqkEqr5pbDltFkh+Qvp+EnCDilXN9X67NFNE=";
   };
 
@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = with lib; {
     description = "The Scala 3 compiler, also known as Dotty";
-    homepage = "http://dotty.epfl.ch/";
+    homepage = "https://scala-lang.org/";
     license = licenses.bsd3;
     platforms = platforms.all;
     maintainers = with maintainers; [
