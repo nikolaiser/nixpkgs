@@ -51,6 +51,9 @@ stdenv.mkDerivation (finalAttrs: {
       karolchmist
       virusdave
       kashw2
+      natsukagami
+      hamzaremmal
+      dottybot
     ];
   };
 })
