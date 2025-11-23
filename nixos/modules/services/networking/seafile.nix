@@ -475,7 +475,7 @@ in
                 ${lib.getExe pkgs.expect} -c 'spawn ${cfg.seahubPackage}/manage.py createsuperuser --email=${cfg.adminEmail}; expect "Password: "; send "${cfg.initialAdminPassword}\r"; expect "Password (again): "; send "${cfg.initialAdminPassword}\r"; expect "Superuser created successfully."'
                 echo "${cfg.seahubPackage.version}-mysql" > "${seafRoot}/seahub-setup"
             fi
-            if [ $(cat "${seafRoot}/seahub-setup" | cut -d"-" -f1) != "${pkgs.seahub.version}" ]; then
+            if [ $(cat "${seafRoot}/seahub-setup" | cut -d"-" -f1) != "${cfg.seahubPackage.version}" ]; then
                 # run django migrations
                 ${cfg.seahubPackage}/manage.py migrate
                 echo "${cfg.seahubPackage.version}-mysql" > "${seafRoot}/seahub-setup"
